@@ -64,6 +64,13 @@
 .card-image {
   width: 100%;
 }
-.card .card-content{
+.card.card-content{
   padding: 10px 15px;
+}
+.card.card-horizontal{
+  display: flex;
+
+}
+.card.card-horizontal .card-image{
+  width: 30%;
 }

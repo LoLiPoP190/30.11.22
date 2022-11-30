@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  border: 1px solid darkred;
 }
 
 .container {
@@ -10,6 +9,9 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+[class^="col"] {
+  padding: 10px;
 }
 .col-1 {
   flex: 8.3% 0 0;

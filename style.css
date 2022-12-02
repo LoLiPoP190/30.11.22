@@ -1,10 +1,23 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
 * {
   box-sizing: border-box;
-  font-family: 'Press Start 2P', cursive;
+  font-family: "Press Start 2P", cursive;
 }
-body{
+body {
   background-image: url(./back.jpg);
+}
+h1 {
+  color: lightsalmon;
+  text-align: center;
+  text-shadow: 0 7px 0 black;
+  transform: translateY(10px);
+}
+.mario{
+  background-color: #9a4e00;
+  height: 130px;
+  width: 350px;
+  margin: 0 auto;
+  box-shadow: 4px 4px 0 black, -4px -4px 0 lightsalmon;
 }
 
 .container {
@@ -22,7 +35,7 @@ body{
   flex: 8.3% 0 0;
 }
 .col-2 {
-  flex: 16.6% 0 0;
+  flex: 16% 1 0;
 }
 .col-3 {
   flex-basis: 25%;
@@ -61,20 +74,28 @@ body{
 }
 
 .card {
-  background-color: antiquewhite;
+  background-color: lightsalmon;
   border: 1px solid black;
   box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
   margin-bottom: 10px;
+  box-shadow: 5px 5px 3px black;
+  transition: all 100ms ease-in;
+}
+.card:hover {
+  transform: scale(1.02);
 }
 .card-image {
   width: 100%;
 }
-.card.card-content{
-  padding: 10px 15px;
+.card .card-content {
+  padding: 10px 10px;
 }
-.card.card-horizontal{
+.card-content {
+  color: rgb(97, 34, 15);
+}
+.card.card-horizontal {
   display: flex;
 }
-.card.card-horizontal .card-image{
+.card.card-horizontal .card-image {
   width: 30%;
 }
